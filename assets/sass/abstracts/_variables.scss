@@ -1,0 +1,136 @@
+// modals
+$old-bg: #dfd5bd;
+$old-border:darken(#dfd5bd,25%);
+$old-bg-shadow:rgba(0, 0, 0, 0.7);
+
+$old-bg-item: lighten($old-bg,10%);
+$old-border-item:lighten(#dfd5bd,25%);
+$old-shadow-item:rgba(0, 0, 0, 0.7);
+$old-bg-item-hover: lighten($old-bg-item,10%);
+
+$old-bar-color: darken(#3e0000,5%);
+$old-bar-bg:#dfd5bd;
+$old-bar-bg-over: lighten(#dfd5bd,7%);
+$old-bar-color-over:darken(#3e0000,5%);
+$old-bar-bg-over-line: darken(#dfd5bd,25%);
+$old-bar-border: lighten(#dfd5bd,8%);
+
+
+$old-input-color: darken(#3e0000,5%);
+$old-input-background: rgba(255, 255, 255, 0.4);
+$old-input-background-focus: rgba(255, 255, 255, 0.7);
+$old-input-border:#3e0000;
+$old-input-border-focus: lighten($old-input-border,20%);
+
+$old-header-border: lighten($old-input-border,5%);  
+
+// buttons, submit
+
+$btn-bg: #b8a06f;
+$btn-color: lighten($btn-bg,70%);
+$btn-br: #efe6d4;
+$btn-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+$btn-bg-hover: darken($btn-bg,15%);
+$btn-color-hover: $btn-color;
+$btn-br-hover: $btn-br;
+$btn-shadow-hover: 0 0 2px 0 rgba(0, 0, 0, 0.4);
+
+$btn-bg--danger: rgba(167, 0, 0, 0.625);
+$btn-bg-hover--danger: darken($btn-bg--danger, 12%); 
+$btn-bg--cancel: rgb(145, 145, 145);
+$btn-bg-hover--cancel: darken($btn-bg--cancel,5%);
+
+// inputs
+$input-bg: rgba(255, 255, 255, .3);
+$input-color: darken($btn-bg, 25%);
+$input-br: rgba(255, 255, 255, .5);
+$input-bg-active: rgba(255, 255, 255, .1);
+$input-bg-active-br: white;
+
+$input-bg: rgba(255, 255, 255, .3);
+$input-bg-br: rgba(255, 255, 255, .5);
+$input-bg-active: rgba(255, 255, 255, .1);
+$input-bg-active-br: white;
+
+$old-input-color: darken(#3e0000,5%);
+$old-input-background: rgba(255, 255, 255, 0.4);
+$old-input-background-focus: rgba(255, 255, 255, 0.8);
+$old-input-border:#b79090;
+$old-input-border-focus: lighten($old-input-border,20%);
+
+// notifications
+$notif-color:#f3efe7;
+$notif-bg:#b0955d;
+$notif-br: rgb(221, 221, 221);
+$notif-shadow: #5c5c5c;
+$notif-danger:#be555c;
+
+
+// context menu v2
+
+$context-menu-bg:darken(#ebe4d6,2%);
+
+$context-menu__toggler-bg:darken(#cebd9b,38%);
+$context-menu__toggler-bg-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
+$context-menu__toggler-color:white;
+$context-menu__toggler-bg-hover: darken(#cebd9b,17%);
+$context-menu__toggler-br:1px solid darken(#f4f0ec,5%);
+
+$context-menu-shadow__content: 1px 4px 4px 0 rgba(0, 0, 0, 0.4);
+
+$link-color: darken($context-menu__toggler-bg,9%);
+$link-color-hover:  darken($context-menu__toggler-bg,15%);
+$link-hover-shadow: 0 0 1px 0 darken($link-color-hover,15%);
+$link-bg-hover: rgba(255, 255, 255,.3);
+$link-color-line: rgba(0, 0, 0,.1);
+$link-color-line-hover: lighten($context-menu__toggler-bg,5%);
+
+$nav-link-color: white;
+$nav-link-bg: lighten($context-menu__toggler-bg,15%);
+$nav-link-bg-hover:darken($context-menu__toggler-bg,5%);
+$nav-link-bg-disabled: darkgrey;
+$nav-link-color-disabled: rgb(83, 83, 83);
+
+$group-bg-title: lighten($context-menu__toggler-bg,19%);
+$group-color-title: white;
+$group-color-br: lighten($context-menu__toggler-bg,25%);
+$group-bg-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+$group-title-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+
+// dark
+$dark-context-menu-bg:lighten(#1f1f1f,2%);
+
+$dark-context-menu__toggler-bg:lighten($dark-context-menu-bg,9%);
+$dark-context-menu__toggler-bg-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
+$dark-context-menu__toggler-color:white;
+$dark-context-menu__toggler-bg-hover: lighten($dark-context-menu-bg,2%);
+$dark-context-menu__toggler-br:1px solid lighten($dark-context-menu-bg,20%);
+
+$dark-context-menu-shadow__content: 0 0 8px 0 rgba(0, 0, 0, 0.6);
+
+$dark-context-menu__switcher-br: darken($dark-context-menu-bg,8%);
+
+$dark-link-color: #cecece;
+$dark-link-color-hover: lighten($dark-link-color,8%);
+$dark-link-bg-hover: rgba(255, 255, 255, 0.07);
+$dark-link-color-line:#5e5e5e;
+$dark-link-color-line-hover:cadetblue;
+
+$dark-nav-link-color: dark;
+$dark-nav-link-bg: lighten(cadetblue,7%);
+$dark-nav-link-bg-hover:darken(cadetblue,7%);
+$dark-nav-link-bg-disabled: darkgrey;
+$dark-nav-link-color-disabled: rgb(83, 83, 83);
+
+$dark-group-bg-title: lighten($dark-context-menu__toggler-bg,6%);
+$dark-group-color-title: white;
+$dark-group-color-br: lighten($dark-context-menu__toggler-bg,9%);
+$dark-group-bg-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+$dark-group-title-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.6);
+
+// tabels
+$table-color:#381c1c;
+$table-border-color:#a69686;
+
+$table-color-odd: lighten(#e2d8c4,5%);
+$table-color-even: darken($table-color-odd,5%);

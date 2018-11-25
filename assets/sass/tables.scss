@@ -1,0 +1,97 @@
+table.custom{
+margin: 0 auto;
+width: 98%;
+
+th.ftr, th.ftop, th.ftl{
+  border: none;
+}
+
+th.ftr, th.ftop, th.ftl,th{
+    background-color: transparent;
+    font-size: 13px;
+    font-family: Arial, Verdana;
+    vertical-align: middle;
+    text-align: left;
+    padding: 5px;
+    color: $table-color;
+    border-top: 1px solid $table-border-color;
+    border-bottom: 1px solid $table-border-color;
+    a{
+      display: inline-block;
+      position: relative;
+      color: $table-color;
+      text-decoration: none;
+      &.arrow[href$="asc"]::after{
+        content: '\2191';
+        position: absolute;
+        top: -3px;
+        padding: 0 2px;
+        font-size: 20px;
+        color: #432927;
+        transform: rotateZ(180deg);
+      }
+      &.arrow[href$="desc"]::after{
+        content: '\2191';
+        position: absolute;
+        top: -7px;
+        padding: 0 2px;
+        font-size: 20px;
+        color: #432927;
+      }
+      &:not(.arrow)::after{
+        content:'\2195';
+        position: absolute;
+        top: -5px;
+        padding: 0 2px;
+        font-size: 18px;
+        color: #432927;
+      }
+    }
+}
+
+th{
+  &:first-of-type{
+    padding-left: 10px;
+  }
+  &:last-of-type{
+    padding-right: 10px;
+  }
+}
+
+td{
+  padding: 10px 5px 5px;
+  &.fleft, &.flr, &.fright{
+    border: none;
+  }
+  transition: all .2s;
+}
+
+tbody{
+    tr{
+      &.dark { background-color: lighten(#e2d8c4,5%); }
+      &.rowEven, &.rowOdd{
+        border-bottom: 1px solid lighten($table-border-color,18%);
+      }
+      &.rowEven{
+        background-color:$table-color-even;
+      }
+      &.rowOdd{
+        background-color: $table-color-odd;
+      }
+      &.hoverHL.rowEven:hover>td,  &:nth-of-type(n+2):hover>td{
+          background-color: lighten($table-color-odd,6%);
+      }
+      &.hoverHL.rowOdd:hover>td,  &:nth-of-type(n+1):hover>td{
+          background-color: lighten($table-color-odd,6%);
+      }
+      &:nth-last-of-type(2){
+        border-bottom: none;
+      }
+      &:last-of-type{
+        display: none;
+      }
+    }
+}
+
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2);
+}

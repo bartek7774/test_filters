@@ -1,0 +1,94 @@
+.font-style{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+  
+  // new style added
+  input[type='submit'],input[type='button']{
+    font-size: 8pt;
+    transition: .2s ease-in;
+    @extend .font-style;
+    @include btn($color-bg: darken($btn-bg,5%));
+  }
+
+  input[type='submit']:hover, input[type='button']:hover{
+     @include btn(
+       $btn-color-hover, $btn-bg-hover,
+       $border-bg:$btn-br-hover, $shadow: $btn-shadow-hover);
+  }
+
+
+  input[type='reset'], input[value='reset']{
+     font-size: 8pt;
+    transition: .2s ease-in;
+    @extend .font-style;
+    @include btn($color-bg: $btn-bg--danger);
+   }
+   input[type='reset']:hover, input[value='reset']:hover{
+      @include btn($color-bg: $btn-bg-hover--danger, $shadow: $btn-shadow-hover);
+   }
+
+
+  input[value='anuluj']{
+    transition: .2s ease-in;
+    @extend .font-style;
+    @include btn($color-bg: $btn-bg--cancel);
+   }
+   
+input[value='anuluj']:hover{
+    @include btn($color-bg: $btn-bg-hover--cancel, $shadow: $btn-shadow-hover);
+}
+
+
+input[type='text'],textarea{
+  padding: 0;
+  margin: 2px 3px;
+  box-sizing: border-box;
+}
+input[type='text'],textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px;
+    margin-top: 5px;
+    font-size: 12px;
+    color: $old-input-color;
+    background-color: $old-input-background;
+    outline: none;
+    border: 1px solid $old-input-border;
+    transition: all .3s ease;
+}
+
+input[type='text']:focus,textarea:focus{
+  border: 1px solid $old-input-border-focus;
+  background-color: $old-input-background-focus;
+}
+
+ input[type='date']{
+   &:hover{
+     color:$old-input-color;
+   }
+ }
+
+/*select{
+    font-size: 13px;
+    border: 1px solid $old-input-background;
+    padding: 0;
+    background-color: darken($btn-bg,10%);
+    color: whitesmoke;
+    cursor: pointer;
+    margin: 5px 0;
+    outline: none;
+    min-width: 100px;
+    box-shadow: 1px 2px 3px 0 rgba(44, 44, 44, 0.308);
+    option{
+      outline: none;
+      margin: 0;
+      padding: 3px 8px;
+      cursor: pointer;
+      border: 1px solid wheat;
+      transition: all .5s ease;
+      &:hover{
+        background-color: darken( $btn-bg,15%);
+      }
+    }
+}*/
